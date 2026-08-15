@@ -1,0 +1,21 @@
+/* Round profile photo styling */
+
+.profile-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.profile-frame {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 20px auto;
+  box-sizing: border-box;
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
