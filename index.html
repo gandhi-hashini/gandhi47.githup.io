@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gandhi | BBA Graduate Portfolio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f3ee;
+      color: #202020;
+      line-height: 1.6;
+    }
+    nav {
+      position: sticky; top: 0; z-index: 10;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 18px 7%;
+      background: rgba(245,243,238,.95);
+      border-bottom: 1px solid #ddd7ca;
+      backdrop-filter: blur(8px);
+    }
+    .logo { font-size: 22px; font-weight: 800; letter-spacing: 1px; }
+    nav a { color: #202020; text-decoration: none; margin-left: 24px; font-size: 14px; font-weight: 700; }
+    section { padding: 80px 7%; max-width: 1200px; margin: auto; }
+    .hero {
+      min-height: 82vh; display: grid; grid-template-columns: 1.2fr .8fr;
+      gap: 50px; align-items: center;
+    }
+    .tag { font-size: 14px; font-weight: 800; letter-spacing: 2px; }
+    h1 { font-size: clamp(48px, 8vw, 92px); line-height: .95; margin: 18px 0 24px; }
+    h2 { font-size: 38px; margin-bottom: 14px; }
+    .hero p { max-width: 650px; color: #5d5d5d; font-size: 18px; }
+    .contact { margin-top: 28px; display: flex; gap: 18px; flex-wrap: wrap; font-size: 14px; font-weight: 700; }
+    .photo {
+      width: 100%; max-width: 360px; justify-self: end;
+      border-radius: 28px; overflow: hidden; box-shadow: 0 24px 60px rgba(0,0,0,.14);
+      background: white;
+    }
+    .photo img { display:block; width:100%; height:auto; }
+    .about-grid { display:grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+    .card {
+      background: white; padding: 30px; border: 1px solid #e1ddd3;
+      border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,.04);
+    }
+    .card p { color:#5d5d5d; }
+    .skills { display:grid; grid-template-columns: repeat(3,1fr); gap:18px; margin-top:30px; }
+    .skill h3 { margin: 10px 0 5px; }
+    .number { font-size: 13px; font-weight: 900; color:#777; }
+    ul { list-style: none; margin-top: 18px; }
+    li { margin: 9px 0; }
+    .footer { text-align:center; padding: 35px 7%; border-top:1px solid #ddd7ca; color:#666; }
+    @media(max-width:800px) {
+      .hero, .about-grid { grid-template-columns: 1fr; }
+      .photo { justify-self: start; max-width: 300px; }
+      .skills { grid-template-columns: 1fr 1fr; }
+      nav { padding: 16px 5%; }
+      nav div:last-child { display:none; }
+    }
+    @media(max-width:520px) { .skills { grid-template-columns:1fr; } section { padding:60px 5%; } }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">GANDHI</div>
+    <div>
+      <a href="#home">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#skills">SKILLS</a>
+      <a href="#contact">CONTACT</a>
+    </div>
+  </nav>
+
+  <section class="hero" id="home">
+    <div>
+      <div class="tag">BBA GRADUATE • BUSINESS & MANAGEMENT</div>
+      <h1>Hii! I'm<br>Gandhi.</h1>
+      <p>Building my career with knowledge, creativity & teamwork.</p>
+      <p style="margin-top:14px">A motivated BBA graduate with practical skills in office applications, basic accounting, communication and creative editing. I enjoy learning, working with people and taking on new professional challenges.</p>
+      <div class="contact">
+        <span>EMAIL • hashinih977@gmail.com</span>
+        <span>PHONE • 9360687825</span>
+      </div>
+    </div>
+    <div class="photo"><img src="image.png" alt="Gandhi portfolio image"></div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-grid">
+      <div class="card">
+        <p>I am a motivated and enthusiastic BBA graduate interested in business management, administration and professional development. I have a good understanding of business concepts and practical computer applications.</p>
+        <p style="margin-top:15px">I am responsible, hardworking and comfortable working as part of a team. My goal is to start my professional journey in an organization where I can apply my knowledge, gain practical experience and contribute positively while continuing to learn.</p>
+      </div>
+      <div class="card">
+        <h3>Education</h3>
+        <p>Bachelor of Business Administration (BBA)</p>
+        <h3 style="margin-top:25px">Career Goal</h3>
+        <p>Grow in a professional business environment</p>
+        <h3 style="margin-top:25px">Work Style</h3>
+        <p>Responsible • Collaborative • Creative</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>My Skills</h2>
+    <p>Tools and strengths I bring to a professional workplace.</p>
+    <div class="skills">
+      <div class="card skill"><span class="number">01</span><h3>MS WORD</h3><p>Document preparation, formatting and editing</p></div>
+      <div class="card skill"><span class="number">02</span><h3>MS EXCEL</h3><p>Data entry, basic formulas, tables and formatting</p></div>
+      <div class="card skill"><span class="number">03</span><h3>TALLY ERP 9</h3><p>Basic accounting entries and voucher handling</p></div>
+      <div class="card skill"><span class="number">04</span><h3>TEAMWORK</h3><p>Collaborating with team members and sharing responsibilities</p></div>
+      <div class="card skill"><span class="number">05</span><h3>COMMUNICATION</h3><p>Clear interpersonal communication and active listening</p></div>
+      <div class="card skill"><span class="number">06</span><h3>EDITING</h3><p>Creative photo, poster and invitation editing</p></div>
+    </div>
+    <div class="card" style="margin-top:25px">
+      <h3>Personal Strengths</h3>
+      <ul>
+        <li>✓ Hardworking</li><li>✓ Quick Learner</li><li>✓ Positive Attitude</li>
+        <li>✓ Team Player</li><li>✓ Creative Thinking</li><li>✓ Adaptable</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="card">
+      <h2>Let's Connect</h2>
+      <p><strong>EMAIL</strong><br>hashinih977@gmail.com</p>
+      <p style="margin-top:15px"><strong>PHONE</strong><br>9360687825</p>
+      <p style="margin-top:25px;font-weight:800">LEARN • GROW • CREATE • ACHIEVE</p>
+    </div>
+  </section>
+
+  <div class="footer">Gandhi • BBA Graduate Portfolio</div>
+</body>
+</html>
